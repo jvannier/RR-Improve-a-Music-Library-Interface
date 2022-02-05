@@ -10,7 +10,7 @@ const ArtistView = () => {
     const navigate = useNavigate();
     
     useEffect(() => {
-        const API_URL = `https://itunes.apple.com/lookup?id=111051&entity=song`
+        const API_URL = `https://itunes.apple.com/lookup?id=${artist}&entity=song`
         const fetchData = async () => {
             const response = await fetch(API_URL)
             const resData = await response.json()
